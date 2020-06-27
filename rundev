@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# default server IP
+SERVER_IP=http://127.0.0.1:5000
+
+
+# command worked, detect version and open server in browser
+if [ "$(uname)" == "Darwin" ]; then
+	# mac version
+	open ${SERVER_IP}
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	# linux version
+	xdg-open ${SERVER_IP}
+else
+	# windows 32 or 64 -- untested
+	start ${SERVER_IP}
+fi
+
+# open flask
+(FLASK_APP=app.py FLASK_ENV=development flask run)
