@@ -25,3 +25,10 @@ Then to run the server, from the root directory, run:
     `FLASK_APP=app.py FLASK_ENV=development flask run`
 
 Then, navigate to http://127.0.0.1:5000/ in your browser. 
+
+## Issue list
+If pip `could not find a version that satisfies the requirement [xxx]`, you
+might be running Python 2.7
+Solution may be running this instead (at least for Ubuntu/Linux):
+
+	`python3 -m pip install -r requirements.txt`
