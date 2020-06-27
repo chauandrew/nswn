@@ -26,6 +26,12 @@ Then to run the server, from the root directory, run:
 
 Then, navigate to http://127.0.0.1:5000/ in your browser. 
 
+Alternatively, once you have set up everything, you can use:
+
+	`./rundev`
+
+To launch the page and run the flask server (you may need to refresh the page)
+
 ## Issue list
 If pip `could not find a version that satisfies the requirement [xxx]`, you
 might be running Python 2.7
