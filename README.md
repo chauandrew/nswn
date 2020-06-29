@@ -1,27 +1,30 @@
 # nswn
-gpla new student welcome night site
+GPLA New Student Welcome Night site. 
 
 
 ## Introduction
 
-Hi friends! We're using Flask/jinja2 for our site. Figuring out a lot of other details atm. 
+Hi friends! We're using React/Nodejs for our site. Other details are still in the works. 
+
 
 ## Getting Started
 
-To run the site, you'll need to set up a python virtual environment. It's a 
-different process based on your os, but here's tutorials for
- [windows](https://programwithus.com/learn-to-code/Pip-and-virtualenv-on-Windows/)/
- [mac](https://sourabhbajaj.com/mac-setup/Python/virtualenv.html)/
- [linux](https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/).
+The `client` folder hosts the react front end, and the `server` folder hosts 
+the backend. 
 
-Once you have the virtual environment installed, source/activate it. Then, cd 
-into the the base directory of the repository, and you can install the 
-project dependencies using:
+Before anything else, you'll need to install npm. 
 
-    `pip install -r requirements.txt`
+To run the frontend server, go to the `client` folder in a terminal and run
 
-Then to run the server, from the root directory, run:
+    `npm install`
 
-    `FLASK_APP=app.py FLASK_ENV=development flask run`
+in order to install the needed packages. Then, to run the front end server, run
 
-Then, navigate to http://127.0.0.1:5000/ in your browser. 
+    `npm start`
+
+The application window should automatically open in a browser! If it doesn't, 
+navigate to `http://localhost:3000` in a browser and you'll see the application!
+
+Similarly, you can run the backend service by going into the `service` directory,
+running `npm install` to install packages, and then running `npm run-scripts dev`.
+
