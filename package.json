@@ -1,20 +1,19 @@
 {
-  "name": "nswn",
+  "name": "api",
   "version": "1.0.0",
-  "description": "GPLA New Student Welcome Night site.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd client && npm install && npm run-script build && cd - && cd server && npm install && npm start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chauandrew/nswn.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install & (cd client && npm run-script build)",
+    "start": "node index.js",
+    "dev": "(nodemon index.js) & cd client && npm run start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chauandrew/nswn/issues"
-  },
-  "homepage": "https://github.com/chauandrew/nswn#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
 }
