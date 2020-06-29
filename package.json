@@ -4,7 +4,7 @@
   "description": "GPLA New Student Welcome Night site.",
   "main": "index.js",
   "scripts": {
-    "start": "cd client && npm run-script build && cd - && cd server && npm start"
+    "start": "cd client && npm install && npm run-script build && cd - && cd server && npm install && npm start"
   },
   "repository": {
     "type": "git",
