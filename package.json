@@ -1,0 +1,20 @@
+{
+  "name": "nswn",
+  "version": "1.0.0",
+  "description": "GPLA New Student Welcome Night site.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd client && npm run-script build && cd - && cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chauandrew/nswn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chauandrew/nswn/issues"
+  },
+  "homepage": "https://github.com/chauandrew/nswn#readme"
+}
