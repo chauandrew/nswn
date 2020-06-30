@@ -1,29 +1,34 @@
 # N S W N
-GPLA New Student Welcome Night site. 
+GPLA New Student Welcome Night site. Check out the live deployment 
+[here](http://nswn.herokuapp.com/)!
 
 
 ## Introduction
-Hi friends! We're using React/Nodejs for our site. Here's a layout/map of what
-the directory structure looks like:
+Hi friends! We're using React/Nodejs for our site. The site is hosted using
+Heroku, and automatically deploys when we push to master. We use bootstrap for
+styling.
 
-```python3
+Here's a layout/map of what the directory structure looks like:
+
+```bash
 /nswn
   README.md             # This file
   package.json          # Dependencies / scripts
   package-lock.json
-  index.js              # Runs node/express in production
+  index.js              # Backend js server
   /client
     package.json
     package-lock.json
-    /public             # Publically hosted site data
+    /public             # Publicly hosted site data
       ...
     /src                # React files / components
       /components       # React Components
-      /css              # Css files
-      /images
-      App.js
-      index.js
+      /css
+      /images       
+      App.js            # Main React component that contains other components
+      index.js          # Entry point for React into DOM
       ...
+  ...
 ```
 
 ## Getting Started
@@ -44,4 +49,16 @@ through in order to run locally:
    you'll see the application running. It should be configured to hot-reload 
    as you update files
 
+## Available Scripts
+
+From the root directory, you can run:
+
+- `npm run dev`: Runs both the front-end and back-end servers locally on ports 
+  3000 and 4000 respectively. This is meant to be used for development, so 
+  files should hot-reload as you make adjustments to them.
+- `npm build`: Initializes the build for production - in particular, it 
+  compiles the front-end scripts so that the backend serves static html
+  instead of js. 
+- `npm start`: Runs the backend server alone. Intended use is for production
+  environments.
 
