@@ -8,7 +8,9 @@ app.use(express.static(path.join(__dirname, '/client/build')))
 app.set('port', process.env.PORT || 4000);
 
 // Render react components server side
-app.get('/', (req, res) => res.render('index.html'))
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 // Backend calls
 app.get('/api', (req, res) => res.send('Hello World!'))

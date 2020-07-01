@@ -10,19 +10,19 @@ class Header extends Component {
     return (
         <Nav className='m-auto'>
           <Nav.Item>
-            <Nav.Link href="#" className="text-secondary">OUR STORY</Nav.Link>
+            <Nav.Link href="/stories" className="text-secondary">OUR STORIES</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#" className="text-secondary">WHAT TO EXPECT</Nav.Link>
+            <Nav.Link href="/about" className="text-secondary">WHAT TO EXPECT</Nav.Link>
           </Nav.Item>
           <Navbar.Brand href="/">
             <img src={logo} alt="logo" width="50" height="50"></img>
           </Navbar.Brand>
           <Nav.Item>
-            <Nav.Link href="#" className="text-secondary">GOT QUESTIONS?</Nav.Link>
+            <Nav.Link href="/course-101" className="text-secondary">GOT QUESTIONS?</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#" className="text-dark font-weight-bold">GET STARTED</Nav.Link>
+            <Nav.Link href="/get-connected" className="text-dark font-weight-bold">GET STARTED</Nav.Link>
           </Nav.Item>
         </Nav>
     );

@@ -2,23 +2,22 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Header from './components/Header/Header';
-import Homepage from './components/Homepage/Homepage';
+import * as Pages from "./pages"
+import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { apiResponse: "" };
-  }
-
   render() {
     return (
       <div>
-        <Header />
         <BrowserRouter>
+          <Header />
           <Switch>
-            <Route path="/">
-              <Homepage />
-            </Route>
+            <Route exact path="/" component={Pages.Homepage} />
+            <Route exact path="/stories" component={Pages.Stories} />
+            <Route exact path="/about" component={Pages.About} />
+            <Route exact path="/course-101" component={Pages.Course101} />
+            <Route exact path="/get-connected" component={Pages.Connect} />
+            <Route component={Pages.Error404} />
           </Switch>
         </BrowserRouter>
       </div>
