@@ -5,11 +5,20 @@ html, body {
 #content {
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, pink 45%, cyan 55%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 47%, #7799A4 53%);
     position: absolute;
     padding: 30px;
     text-align: center;
     font-weight: bold;
     font-family: Arial, sans-serif;
     z-index: -1;
+}
+
+#nswnIs {
+    margin: 200px 0px;
+}
+
+#underscore {
+    margin-top: 100px;
+    border-bottom: 1px solid black;
 }
