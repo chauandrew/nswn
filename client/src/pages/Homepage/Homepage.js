@@ -4,28 +4,14 @@ import './Homepage.css';
 class Homepage extends Component {
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Edit <code>src/App.js</code> and save to reload.
-      //     </p>
-      //     <a
-      //       className="App-link"
-      //       href="https://reactjs.org"
-      //       target="_blank"
-      //       rel="noopener noreferrer"
-      //     >
-      //       Learn React
-      //     </a>
-      //   </header>
-      // </div>
-      <div id="content">
-        <p>This is some content.</p>
-        <div>
-          <p>Some other content.</p>
+      <div id="content" className="container-fluid">
+        <div className="row">
+          <div className="col-md-5 align-self-center" id="nswnIs">
+            <h1>NSWN is </h1>
+            <p id="underscore"></p>
+          </div>
         </div>
-      </div>
+    </div>
       // <div className="App">
       //   <header className="App-header">
       //     <p>
