@@ -2,4 +2,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
 }
