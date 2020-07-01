@@ -25,7 +25,8 @@ Here's a layout/map of what the directory structure looks like:
       /components       # React Components, each folder hosts a js/css file
         ...
       /assets           # Static images, etc.
-      App.js            # Main React component that contains other components
+      App.js            # Main React component with routes + default components
+      App.css           # Put global css here
       index.js          # Entry point for React into DOM
       ...
   ...
@@ -53,11 +54,18 @@ through in order to run locally:
 
 From the root directory, you can run:
 
-### `npm run dev` 
+### `npm run all` 
 Runs both the front-end and back-end servers locally on ports 
 3000 and 4000 respectively. This is meant to be used for development, so 
-files should hot-reload as you make adjustments to them. **Alternatively, if**
-**you only want to run the front end, run** `npm start` **from** `/client`.
+files should hot-reload as you make adjustments to them. When you kill the
+server (eg ctrl+c), the backend will still be running in the background. You
+may have to kill it manually (eg `pkill node`).
+
+### `npm run frontend`
+Runs the front-end service alone on port 3000 (with hot-reloading).
+
+### `npm run backend`
+Runs the backend service alone on port 4000 (with hot-reloading).
 
 ### `npm build` 
 Initializes the build for production - in particular, it 
