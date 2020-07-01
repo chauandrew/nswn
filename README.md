@@ -22,7 +22,9 @@ Here's a layout/map of what the directory structure looks like:
     /public             # Publicly hosted site data
       ...
     /src                # React files / components
-      /components       # React Components, each folder hosts a js/css file
+      /pages            # React components for whole pages
+        ...
+      /components       # Smaller React components
         ...
       /assets           # Static images, etc.
       App.js            # Main React component with routes + default components
@@ -67,7 +69,7 @@ Runs the front-end service alone on port 3000 (with hot-reloading).
 ### `npm run backend`
 Runs the backend service alone on port 4000 (with hot-reloading).
 
-### `npm build` 
+### `npm run build` 
 Initializes the build for production - in particular, it 
 compiles the front-end scripts so that the backend serves static html
 instead of js. 

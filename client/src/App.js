@@ -2,12 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Header from './components/Header/Header';
-import Homepage from './pages/Homepage/Homepage';
-import Stories from './pages/Stories/Stories';
-import Course101 from './pages/Course101/Course101';
-import About from './pages/About/About';
-import Connect from './pages/Connect/Connect';
-
+import * as Pages from "./pages"
 import './App.css';
 
 class App extends Component {
@@ -17,22 +12,12 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path="/">
-              <Homepage />
-            </Route>
-            <Route exact path="/stories">
-              <Stories />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/course-101">
-              <Course101 />
-            </Route>
-            <Route exact path="/get-connected">
-              <Connect />
-            </Route>
-            <Route><h2>Page not found!</h2></Route>
+            <Route exact path="/" component={Pages.Homepage} />
+            <Route exact path="/stories" component={Pages.Stories} />
+            <Route exact path="/about" component={Pages.About} />
+            <Route exact path="/course-101" component={Pages.Course101} />
+            <Route exact path="/get-connected" component={Pages.Connect} />
+            <Route component={Pages.Error404} />
           </Switch>
         </BrowserRouter>
       </div>
