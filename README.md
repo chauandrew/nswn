@@ -27,7 +27,7 @@ Here's a layout/map of what the directory structure looks like:
       /components       # Smaller React components
         ...
       /assets           # Static images, etc.
-      App.js            # Main React component with routes + defaults components
+      App.js            # Main React component with routes + default components
       App.css           # Put global css here
       index.js          # Entry point for React into DOM
       ...
