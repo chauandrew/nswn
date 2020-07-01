@@ -1,6 +1,6 @@
 # N S W N
 GPLA New Student Welcome Night site. Check out the live deployment 
-[here](http://nswn.herokuapp.com/)!
+[here](https://nswn.herokuapp.com/)!
 
 
 ## Introduction
@@ -16,15 +16,15 @@ Here's a layout/map of what the directory structure looks like:
   package.json          # Dependencies / scripts
   package-lock.json
   index.js              # Backend js server
-  /client
+  /client               # Front-end React files
     package.json
     package-lock.json
     /public             # Publicly hosted site data
       ...
     /src                # React files / components
-      /components       # React Components
-      /css
-      /images       
+      /components       # React Components, each folder hosts a js/css file
+        ...
+      /assets           # Static images, etc.
       App.js            # Main React component that contains other components
       index.js          # Entry point for React into DOM
       ...
@@ -53,12 +53,18 @@ through in order to run locally:
 
 From the root directory, you can run:
 
-- `npm run dev`: Runs both the front-end and back-end servers locally on ports 
-  3000 and 4000 respectively. This is meant to be used for development, so 
-  files should hot-reload as you make adjustments to them.
-- `npm build`: Initializes the build for production - in particular, it 
-  compiles the front-end scripts so that the backend serves static html
-  instead of js. 
-- `npm start`: Runs the backend server alone. Intended use is for production
-  environments.
+### `npm run dev` 
+Runs both the front-end and back-end servers locally on ports 
+3000 and 4000 respectively. This is meant to be used for development, so 
+files should hot-reload as you make adjustments to them. **Alternatively, if**
+**you only want to run the front end, run** `npm start` **from** `/client`.
+
+### `npm build` 
+Initializes the build for production - in particular, it 
+compiles the front-end scripts so that the backend serves static html
+instead of js. 
+
+### `npm start`
+Runs the backend server alone. Intended use is for production
+environments.
 

@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../images/logo.png';
-import '../css/Header.css'
+import logo from '../../assets/logo.png';
+import './Header.css';
 
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     return (
         <Nav className='m-auto'>
@@ -21,7 +16,7 @@ class Header extends Component {
             <Nav.Link href="#" className="text-secondary">WHAT TO EXPECT</Nav.Link>
           </Nav.Item>
           <Navbar.Brand href="/">
-            <img src={logo} width="50" height="50"></img>
+            <img src={logo} alt="logo" width="50" height="50"></img>
           </Navbar.Brand>
           <Nav.Item>
             <Nav.Link href="#" className="text-secondary">GOT QUESTIONS?</Nav.Link>
