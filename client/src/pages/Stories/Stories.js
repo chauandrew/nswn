@@ -70,19 +70,67 @@ class Stories extends Component {
                             asperiores repellat.
                         </p>
                     </li>
-                </ul>
-                <ul>
+                
                     <li>
                         <img></img>
-                        <p>Example 4</p>
+                        <p>
+                            At in tellus integer feugiat scelerisque varius 
+                            morbi enim. Sed viverra ipsum nunc aliquet 
+                            bibendum enim. Congue eu consequat ac felis donec 
+                            et. Porttitor massa id neque aliquam vestibulum 
+                            morbi blandit cursus risus. Nisl nisi scelerisque 
+                            eu ultrices vitae auctor eu augue ut. At imperdiet 
+                            dui accumsan sit. Aliquam faucibus purus in massa 
+                            tempor. Id ornare arcu odio ut sem nulla pharetra 
+                            diam sit. Bibendum est ultricies integer quis 
+                            auctor elit sed vulputate mi. Malesuada 
+                            pellentesque elit eget gravida cum sociis natoque 
+                            penatibus. Mauris sit amet massa vitae tortor 
+                            condimentum lacinia quis. Sem viverra aliquet eget 
+                            sit amet. Commodo odio aenean sed adipiscing diam 
+                            donec adipiscing tristique risus.
+                        </p>
+                    </li>
+
+                    <li>
+                        <img></img>
+                        <p>
+                            Dictumst quisque sagittis purus sit amet volutpat. 
+                            Magna etiam tempor orci eu. Vulputate odio ut enim 
+                            blandit volutpat maecenas volutpat blandit 
+                            aliquam. Quis varius quam quisque id diam vel. 
+                            Eget felis eget nunc lobortis mattis aliquam 
+                            faucibus. Sed risus pretium quam vulputate 
+                            dignissim. Aliquet lectus proin nibh nisl 
+                            condimentum. Phasellus egestas tellus rutrum 
+                            tellus pellentesque eu. Congue nisi vitae suscipit 
+                            tellus mauris a diam maecenas. Nullam non nisi est 
+                            sit. Nunc id cursus metus aliquam. Morbi blandit 
+                            cursus risus at.
+                        </p>
                     </li>
                     <li>
                         <img></img>
-                        <p>Example 5</p>
-                    </li>
-                    <li>
-                        <img></img>
-                        <p>Example 6</p>
+                        <p>
+                            Orci sagittis eu volutpat odio facilisis. Proin 
+                            libero nunc consequat interdum varius sit. 
+                            Facilisis leo vel fringilla est ullamcorper eget 
+                            nulla. Consectetur adipiscing elit pellentesque 
+                            habitant morbi tristique senectus. Blandit 
+                            volutpat maecenas volutpat blandit aliquam etiam 
+                            erat velit. Et netus et malesuada fames ac. Nulla 
+                            facilisi cras fermentum odio eu feugiat. 
+                            Pellentesque habitant morbi tristique senectus et 
+                            netus. Aliquam id diam maecenas ultricies mi eget 
+                            mauris. Senectus et netus et malesuada fames ac 
+                            turpis. In cursus turpis massa tincidunt. Faucibus 
+                            a pellentesque sit amet. Tempor commodo 
+                            ullamcorper a lacus vestibulum sed arcu non odio. 
+                            Nisl vel pretium lectus quam id leo in. Sit amet 
+                            nisl suscipit adipiscing bibendum est ultricies 
+                            integer. Diam volutpat commodo sed egestas egestas 
+                            fringilla.
+                        </p>
                     </li>
                 </ul>
             </div>
