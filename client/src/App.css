@@ -1,2 +1,12 @@
 /* Global CSS that you might feel compelled to write */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Offsets each page content so that it doesn't conflict with navbar*/
+.page-content{
+    padding-top: 76px;
+}
+
+.page-body{
+    min-width: 100vw;
+    padding: 0 10vw;
+}
