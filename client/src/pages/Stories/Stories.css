@@ -1,9 +1,8 @@
-h1 {
-    margin-top: 5%;
+.header {
     text-align: center;
 }
 
-li {
+.profile {
     align-items: center;
     display: inline-block;
     justify-content: space-evenly;
@@ -11,7 +10,7 @@ li {
     width: 33%;
 }
 
-p {
+.profDesc {
     margin-left: 5%;
     margin-right: 5%;
 }
