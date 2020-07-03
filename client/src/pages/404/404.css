@@ -1,0 +1,11 @@
+.error404-wrapper {
+    width:100%;
+    height:100vh;
+    display: flex;
+}
+
+.error404 {
+    margin: auto;
+    font-family: Roboto;
+    max-width: 700px;
+}
