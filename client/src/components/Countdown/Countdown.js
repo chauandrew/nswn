@@ -54,6 +54,7 @@ class Countdown extends Component {
                     minutesLeft: 0,
                     secondsLeft: 0,
                 })
+                clearInterval(this.myInterval)
             } else {
                 this.setState({
                     daysLeft: Math.floor(diff / (1000 * 60 * 60 * 24)),
