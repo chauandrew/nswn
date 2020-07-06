@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Countdown from '../../components/Countdown/Countdown';
 import './Homepage.css';
 
 class Homepage extends Component {
@@ -11,6 +12,7 @@ class Homepage extends Component {
             <p id="underscore"></p>
           </div>
         </div>
+		<Countdown />
     </div>
       // <div className="App">
       //   <header className="App-header">

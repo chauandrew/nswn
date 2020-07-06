@@ -1,19 +1,19 @@
 #countdown-box {
     display: flex;
     justify-content: center;
+    width: 626px;
     background-color: aqua;
-    width: 30%;
     margin: auto;
+	font-family: raleway;
 }
 
 .number-font {
-    font-size: 30px;
-    margin-bottom: 5%;
+    font-size: 80px;
     text-align: center;
+    justify-content: left;
 }
 
 .text-font {
-    font-size: small;
-    margin-top: 5%;
+    font-size: 20px;
 }
 

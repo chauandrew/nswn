@@ -11,32 +11,33 @@ class Countdown extends Component {
             minutesLeft: 0,
             secondsLeft: 0,
         };
-      }
+    }
 
     render() {
-        const {daysLeft} = this.state
-        const {hoursLeft} = this.state
-        const {minutesLeft} = this.state
-        const {secondsLeft} = this.state
+        const { daysLeft } = this.state
+        const { hoursLeft } = this.state
+        const { minutesLeft } = this.state
+        const { secondsLeft } = this.state
+        const slashwithspace = " / "
         return (
             <div id="countdown-box" class="number-font">
                 <section>
-                    <p class="number-font">{daysLeft}</p>
+                    {this.underTen(daysLeft)}
                     <p class="text-font">days</p>
                 </section>
                 <p>/</p>
                 <section>
-                    <p class="number-font">{hoursLeft}</p>
+                    {this.underTen(hoursLeft)}
                     <p class="text-font">hours</p>
                 </section>
                 <p>/</p>
                 <section>
-                    <p class="number-font">{minutesLeft}</p>
+                    {this.underTen(minutesLeft)}
                     <p class="text-font">minutes</p>
                 </section>
                 <p>/</p>
                 <section>
-                    <p class="number-font">{secondsLeft}</p>
+                    {this.underTen(secondsLeft)}
                     <p class="text-font">seconds</p>
                 </section>
             </div>
@@ -62,12 +63,28 @@ class Countdown extends Component {
                     minutesLeft: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
                     secondsLeft: Math.floor((diff % (1000 * 60)) / 1000),
                 })
+//                this.setState({
+//                    daysLeft: (daysLeft < 10) ? '0' + daysLeft : daysLeft,
+//                    hoursLeft: (hoursLeft < 10) ? '0' + hoursLeft : hoursLeft,
+//                    minutesLeft: (minutesLeft < 10) ? '0' + minutesLeft : minutesLeft,
+//                    secondsLeft: (secondsLeft < 10) ? '0' + secondsLeft : secondsLeft,
+//                })
             }
         }, 900)
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         clearInterval(this.myInterval)
+    }
+
+    underTen(name) {
+        if (name < 10) {
+            return (
+                <p>0{name}</p>
+            )
+        } else {
+            return <p>{name}</p>;
+        }
     }
 }
 
