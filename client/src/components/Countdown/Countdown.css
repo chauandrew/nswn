@@ -1,4 +1,19 @@
 #countdown-box {
     display: flex;
     justify-content: center;
+    background-color: aqua;
+    width: 30%;
+    margin: auto;
 }
+
+.number-font {
+    font-size: 30px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.text-font {
+    font-size: small;
+    margin-top: 5%;
+}
+

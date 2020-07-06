@@ -19,25 +19,25 @@ class Countdown extends Component {
         const {minutesLeft} = this.state
         const {secondsLeft} = this.state
         return (
-            <div id="countdown-box">
+            <div id="countdown-box" class="number-font">
                 <section>
-                    <p>{daysLeft}</p>
-                    <p><small>days</small></p>
+                    <p class="number-font">{daysLeft}</p>
+                    <p class="text-font">days</p>
                 </section>
                 <p>/</p>
                 <section>
-                    <p>{hoursLeft}</p>
-                    <p><small>hours</small></p>
+                    <p class="number-font">{hoursLeft}</p>
+                    <p class="text-font">hours</p>
                 </section>
                 <p>/</p>
                 <section>
-                    <p>{minutesLeft}</p>
-                    <p><small>minutes</small></p>
+                    <p class="number-font">{minutesLeft}</p>
+                    <p class="text-font">minutes</p>
                 </section>
                 <p>/</p>
                 <section>
-                    <p>{secondsLeft}</p>
-                    <p><small>seconds</small></p>
+                    <p class="number-font">{secondsLeft}</p>
+                    <p class="text-font">seconds</p>
                 </section>
             </div>
         );
