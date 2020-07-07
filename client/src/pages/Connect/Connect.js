@@ -114,7 +114,7 @@ const Connect = () => {
                         <br />
                         <Form.Check type="checkbox" label="I want to get involved in Klesis! (Service, Mentorship, Fun Stuff too!)" />
                         <br />
-                        <Form.Check type="checkbox" label="I'm interested in Fall 2020 Welcome Week Events" />
+                        <Form.Check type="checkbox" label="I'm interested in learning about Christianity (course101.org)" />
 
                         <br />
                         <Button variant="primary" type="submit">Connect with GP!</Button>
