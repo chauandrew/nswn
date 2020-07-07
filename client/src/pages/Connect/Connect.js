@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Form, Button } from 'react-bootstrap';
 import banner from '../../assets/get-started-placeholder.jpg';
+import flyers from '../../data/flyers.json';
+import Flyer from '../../components/Flyer/Flyer';
 import './Connect.css';
 
 const Connect = () => {
@@ -84,6 +86,13 @@ const Connect = () => {
         }
     };
 
+    /* Renders the list of flyers from json file */
+    const flyerList = flyers.events.map((event) => {
+        return(
+            <Flyer src={event.src} alt={event.eventName} time={event.eventTime} location={event.location} />
+        )
+    })
+
     /* Actual content of this page */
     return (
         <div className="page-content">
@@ -121,7 +130,7 @@ const Connect = () => {
                     </Form>
                 </div>
                 <div className="get-started-sub" id={contentIDs[2]}>
-                    <p>There are no event flyers yet - stay tuned!</p>
+                    {flyerList}
                 </div>
             </div>
         </div>

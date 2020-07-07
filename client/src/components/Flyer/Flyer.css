@@ -1,0 +1,12 @@
+.flyer-container {
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.flyer-info {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+}
