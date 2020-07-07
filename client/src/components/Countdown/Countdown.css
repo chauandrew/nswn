@@ -1,19 +1,25 @@
 #countdown-box {
     display: flex;
     justify-content: center;
-    width: 626px;
-    background-color: aqua;
+    /* width: 626px; */
+    width: 43%;
+    background-color: white;
     margin: auto;
-	font-family: raleway;
+    font-family: raleway;
 }
 
+
 .number-font {
-    font-size: 80px;
+    font-size: calc(16px + 3vw);
     text-align: center;
-    justify-content: left;
+    padding: 0px 1vw;
+    margin-bottom: calc(-1vh);
+    /* padding-right: 0.5vw; */
 }
 
 .text-font {
-    font-size: 20px;
+    font-size: calc(1vw + 5px);
+    margin-top: 0px;
+    margin-bottom: calc(1vh);
 }
 

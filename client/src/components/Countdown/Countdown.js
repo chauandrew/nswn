@@ -18,24 +18,23 @@ class Countdown extends Component {
         const { hoursLeft } = this.state
         const { minutesLeft } = this.state
         const { secondsLeft } = this.state
-        const slashwithspace = " / "
         return (
-            <div id="countdown-box" class="number-font">
+            <div id="countdown-box">
                 <section>
                     {this.underTen(daysLeft)}
                     <p class="text-font">days</p>
                 </section>
-                <p>/</p>
+                <p class="number-font">/</p>
                 <section>
                     {this.underTen(hoursLeft)}
                     <p class="text-font">hours</p>
                 </section>
-                <p>/</p>
+                <p class="number-font">/</p>
                 <section>
                     {this.underTen(minutesLeft)}
                     <p class="text-font">minutes</p>
                 </section>
-                <p>/</p>
+                <p class="number-font">/</p>
                 <section>
                     {this.underTen(secondsLeft)}
                     <p class="text-font">seconds</p>
@@ -80,10 +79,10 @@ class Countdown extends Component {
     underTen(name) {
         if (name < 10) {
             return (
-                <p>0{name}</p>
+                <p class="number-font">0{name}</p>
             )
         } else {
-            return <p>{name}</p>;
+            return <p class="number-font">{name}</p>;
         }
     }
 }
