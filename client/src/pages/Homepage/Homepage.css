@@ -19,6 +19,14 @@ html, body {
 
 #nswnIs {
     margin: 300px 0px;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #nswnIs {
+      padding-left: 25px;
+    }
 }
 
 #underscore {
@@ -51,16 +59,9 @@ html, body {
 		1px 1px 0 #000;
 }
 
-.parallax .row .col-md {
-    margin-top: 100px;
-}
-
-#pizza {
+#message {
     height: 100%;
-    font-size:36px;
-    padding-top: 300px;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding-top: 200px;
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
