@@ -14,14 +14,22 @@
 .get-started-sub {
     margin-top: 5vh;
     width:35vw;
-    min-width: 350px;
 }
 
 #get-started-form {
     margin-right: 5vw;
 }
 
+#get-started-form-mobile {
+    width: 80vw;
+}
+
 #get-started-flyers {
     margin-left: 5vw;
+    background-color: aliceblue;
+}
+
+#get-started-flyers-mobile {
+    width: 80vw;
     background-color: aliceblue;
 }

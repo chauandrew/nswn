@@ -1,9 +1,30 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Form, Button } from 'react-bootstrap';
 import banner from '../../assets/get-started-placeholder.jpg';
 import './Connect.css';
 
 const Connect = () => {
+
+    /* Checks window resize to see if we need to switch to mobile view */
+    const[contentIDs, setContentIDs] = useState(["get-started-body", "get-started-form", "get-started-flyers"])
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        handleWindowSizeChange();
+
+        return function cleanup() {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    },[]);
+
+    /* Renders different views depending on width */
+    const handleWindowSizeChange = () => {
+        if(window.innerWidth <= 768){
+            setContentIDs(["get-started-body-mobile", "get-started-form-mobile", "get-started-flyers-mobile"]);
+        }else{
+            setContentIDs(["get-started-body", "get-started-form", "get-started-flyers"]);
+        }
+    }
 
     /* Handles the signup from students, probably need a backend for this? */
     const handleSignUp = async (event) => {
@@ -69,8 +90,8 @@ const Connect = () => {
             {/* Can the final banner have a title text saying "Get Started?" It's pretty hard to 
             make sure that the text is centered and responsive */}
             <img className="get-started-banner" src={banner} alt="Get started!" />
-            <div className="page-body" id="get-started-body">
-                <div className="get-started-sub" id="get-started-form">
+            <div className="page-body" id={contentIDs[0]}>
+                <div className="get-started-sub" id={contentIDs[1]}>
                     <Form onSubmit={handleSignUp}>
                         <div className="inputField">
                             <Form.Label>Name *</Form.Label>
@@ -99,7 +120,7 @@ const Connect = () => {
                         <Button variant="primary" type="submit">Connect with GP!</Button>
                     </Form>
                 </div>
-                <div className="get-started-sub" id="get-started-flyers">
+                <div className="get-started-sub" id={contentIDs[2]}>
                     <p>There are no event flyers yet - stay tuned!</p>
                 </div>
             </div>
