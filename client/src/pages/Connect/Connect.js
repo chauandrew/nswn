@@ -1,12 +1,110 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Form, Button } from 'react-bootstrap';
+import banner from '../../assets/get-started-placeholder.jpg';
 import './Connect.css';
 
-class Connect extends Component {
-    render() {
-        return (
-            <h1>Get connected!</h1>
-        );
+const Connect = () => {
+
+    /* Handles the signup from students, probably need a backend for this? */
+    const handleSignUp = async (event) => {
+        let nameValid = handleNameChange(event.target.elements[0].value);
+        let emailValid = handleEmailChange(event.target.elements[1].value);
+
+        if (!nameValid) {
+            alert("Please enter your first and last name");
+        }
+        else if (!emailValid) {
+            alert("Invalid email format");
+        }
+        else {
+            alert("Thanks for connecting with us! A staff will be in touch shortly.");
+        }
     }
+
+    /* Makes sure name has the correct format */
+    const handleNameChange = (name) => {
+        // Checking for format of the name
+        const nameInput = name;
+        let lastSpacePos = nameInput.lastIndexOf(' ');
+        let firstNameValid = lastSpacePos > 0;
+        let lastNameValid = nameInput.length - lastSpacePos > 1;
+
+        // If invalid, indicate an error
+        if (nameInput === "" || !firstNameValid || !lastNameValid) {
+            return false;
+        }
+
+        // If valid, indicate valid
+        else {
+            return true;
+        }
+
+    }
+
+    /* When input for email address changes, try to validate the email address */
+    const handleEmailChange = (email) => {
+        const emailInput = email;
+        let lastAtPos = emailInput.lastIndexOf('@');
+        let lastDotPos = emailInput.lastIndexOf('.');
+
+        // Logics used to check validity of email input
+        let validFormat = lastAtPos > 0 && lastDotPos > 2 && lastAtPos < lastDotPos;
+        let containsDoubleAt = emailInput.lastIndexOf('@@') !== -1;
+        let validOrgNameLength = emailInput.length - lastDotPos > 2;
+
+        // If any of the logics are not satisfied, email is not valud
+        if (emailInput === "" || !validFormat || !validOrgNameLength || containsDoubleAt) {
+            return false;
+        }
+
+        // Otherwise, it's valid!
+        else {
+            return true;
+        }
+    };
+
+    /* Actual content of this page */
+    return (
+        <div className="page-content">
+            {/* Can the final banner have a title text saying "Get Started?" It's pretty hard to 
+            make sure that the text is centered and responsive */}
+            <img className="get-started-banner" src={banner} alt="Get started!" />
+            <div className="page-body" id="get-started-body">
+                <div className="get-started-sub" id="get-started-form">
+                    <Form onSubmit={handleSignUp}>
+                        <div className="inputField">
+                            <Form.Label>Name *</Form.Label>
+                            <Form.Control name="name" type="name" placeholder="First & Last Name" style={{ backgroundColor: "white" }}
+                            />
+                        </div>
+                        <br />
+                        <div className="inputField">
+                            <Form.Label>Email *</Form.Label>
+                            <Form.Control name="email" type="email" placeholder="Email" style={{ backgroundColor: "white" }}
+                            />
+                        </div>
+
+                        {/* Checkboxes */}
+                        <br />
+                        <Form.Check type="checkbox" label="I'm interested in Fall 2020 Welcome Week Events" />
+                        <br />
+                        <Form.Check type="checkbox" label="I want to join a small group with 
+                    other incoming freshmen and upperclassmen" />
+                        <br />
+                        <Form.Check type="checkbox" label="I want to get involved in Klesis! (Service, Mentorship, Fun Stuff too!)" />
+                        <br />
+                        <Form.Check type="checkbox" label="I'm interested in Fall 2020 Welcome Week Events" />
+
+                        <br />
+                        <Button variant="primary" type="submit">Connect with GP!</Button>
+                    </Form>
+                </div>
+                <div className="get-started-sub" id="get-started-flyers">
+                    <p>There are no event flyers yet - stay tuned!</p>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default Connect;

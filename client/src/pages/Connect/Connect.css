@@ -1,0 +1,27 @@
+.get-started-banner {
+    width: 100vw;
+    height: 36vw;
+}
+
+#get-started-body {
+    display: flex;
+}
+
+#get-started-body-mobile {
+    display: block;
+}
+
+.get-started-sub {
+    margin-top: 5vh;
+    width:35vw;
+    min-width: 350px;
+}
+
+#get-started-form {
+    margin-right: 5vw;
+}
+
+#get-started-flyers {
+    margin-left: 5vw;
+    background-color: aliceblue;
+}
