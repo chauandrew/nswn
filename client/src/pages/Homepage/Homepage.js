@@ -6,9 +6,11 @@ class Homepage extends Component {
   render() {
     return (
       <div id="content">
-        <div className="col-md-5" id="nswnIs">
-          <h1>NSWN is </h1>
-          <p id="underscore"></p>
+        <div className="container-fluid gradient">
+          <div className="col-md-5" id="nswnIs">
+            <h1>NSWN is </h1>
+            <p id="underscore"></p>
+          </div>
         </div>
 
         <div class="container-fluid parallax">
