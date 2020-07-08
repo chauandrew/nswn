@@ -22,22 +22,22 @@ class Countdown extends Component {
             <div id="countdown-box">
                 <section>
                     {this.underTen(daysLeft)}
-                    <p class="text-font">days</p>
+                    <p className="text-font">days</p>
                 </section>
-                <p class="number-font">/</p>
+                <p className="number-font">/</p>
                 <section>
                     {this.underTen(hoursLeft)}
-                    <p class="text-font">hours</p>
+                    <p className="text-font">hours</p>
                 </section>
-                <p class="number-font">/</p>
+                <p className="number-font">/</p>
                 <section>
                     {this.underTen(minutesLeft)}
-                    <p class="text-font">minutes</p>
+                    <p className="text-font">minutes</p>
                 </section>
-                <p class="number-font">/</p>
+                <p className="number-font">/</p>
                 <section>
                     {this.underTen(secondsLeft)}
-                    <p class="text-font">seconds</p>
+                    <p className="text-font">seconds</p>
                 </section>
             </div>
         );
@@ -79,10 +79,10 @@ class Countdown extends Component {
     underTen(name) {
         if (name < 10) {
             return (
-                <p class="number-font">0{name}</p>
+                <p className="number-font">0{name}</p>
             )
         } else {
-            return <p class="number-font">{name}</p>;
+            return <p className="number-font">{name}</p>;
         }
     }
 }

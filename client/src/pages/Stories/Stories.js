@@ -15,7 +15,7 @@ class Stories extends Component {
         let cards = Config.stories.map((story, idx) => {
             let imgsrc = assets('./' + story.img);
             return (
-                <StoryCard title={story.author} value={story.body} src={imgsrc} />
+                <StoryCard title={story.author} value={story.body} src={imgsrc} key={idx} />
             );
         });
 
