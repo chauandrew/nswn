@@ -5,6 +5,8 @@
 
 #get-started-body {
     display: flex;
+    padding-top: 50px;
+    padding-bottom: 200px;
 }
 
 #get-started-body-mobile {
