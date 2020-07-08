@@ -7,7 +7,7 @@ class Homepage extends Component {
     return (
       <div id="content">
         <div className="container-fluid gradient">
-          <div className="col-md-5" id="nswnIs">
+          <div className="col-lg-5" id="nswnIs">
             <h1>NSWN is </h1>
             <p id="underscore"></p>
           </div>
