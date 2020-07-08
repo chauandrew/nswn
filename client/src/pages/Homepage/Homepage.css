@@ -2,12 +2,15 @@ html, body {
     height: 100%;
 }
 
+.container-fluid {
+    padding: 80px 120px;
+}
+
 #content {
     height: 100%;
     width: 100%;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 47%, #7799A4 53%);
     position: absolute;
-    padding: 30px;
     text-align: center;
     font-weight: bold;
     font-family: Arial, sans-serif;
@@ -15,10 +18,55 @@ html, body {
 }
 
 #nswnIs {
-    margin: 200px 0px;
+    margin: 300px 0px;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #nswnIs {
+      padding-left: 25px;
+    }
 }
 
 #underscore {
     margin-top: 100px;
     border-bottom: 1px solid black;
+}
+
+#imageText {
+    color: #fff !important;
+    margin-top: 100px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../../assets/humansofnewyork.png");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#message {
+    height: 100%;
+    padding-top: 200px;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
 }
