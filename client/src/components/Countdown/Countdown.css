@@ -6,6 +6,7 @@
     background-color: white;
     margin: auto;
     font-family: raleway;
+
 }
 
 
@@ -19,6 +20,7 @@
 
 .text-font {
     font-size: calc(1vw + 5px);
+    text-align: center;
     margin-top: 0px;
     margin-bottom: calc(1vh);
 }
