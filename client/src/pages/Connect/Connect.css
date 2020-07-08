@@ -1,0 +1,42 @@
+.get-started-banner {
+    width: 100vw;
+    height: 36vw;
+}
+
+#get-started-body {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+#get-started-body-mobile {
+    display: block;
+}
+
+.get-started-sub {
+    margin-top: 5vh;
+    width:35vw;
+}
+
+.get-started-sub h3{
+    margin-left: 10%;
+    margin-bottom: 2vh;
+}
+
+#get-started-form {
+    margin-right: 5vw;
+}
+
+#get-started-form-mobile {
+    width: 60vw;
+}
+
+#get-started-flyers {
+    margin-left: 5vw;
+    display: block;
+    align-items: center;
+}
+
+#get-started-flyers-mobile {
+    width: 80vw;
+}
