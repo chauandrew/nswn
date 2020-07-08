@@ -5,24 +5,26 @@ import StoryCard from '../../components/StoryCard/StoryCard';
 import HeroImage from '../../components/HeroImage/HeroImage';
 
 import * as Placeholders from '../../assets/placeholders';
+import Config from '../../data/our-story.json';
 import './Stories.css';
 
 class Stories extends Component {
+    
     render() {
-        var placeholderText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        let assets = require.context('../../assets', true);
+        let cards = Config.stories.map((story, idx) => {
+            let imgsrc = assets('./' + story.img);
+            return (
+                <StoryCard title={story.author} value={story.body} src={imgsrc} key={idx} />
+            );
+        });
+
         return (
             <div>
                 <HeroImage value="OUR STORY" src={Placeholders.standard}/>
                 <Container fluid className="card-container">
                     <CardColumns>
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.standard} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.wide} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.vertical} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.wide} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.standard} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.wide} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.standard} />
-                        <StoryCard title="Jeff Ding" value={placeholderText} src={Placeholders.vertical} />
+                        {cards}
                     </CardColumns>
                 </Container>
             </div>
