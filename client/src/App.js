@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from './components/Header/Header';
 import * as Pages from "./pages"
 import './App.css';
+import Countdown from './components/Countdown/Countdown';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route component={Pages.Error404} />
           </Switch>
         </BrowserRouter>
+        <Countdown />
       </div>
     );
   }

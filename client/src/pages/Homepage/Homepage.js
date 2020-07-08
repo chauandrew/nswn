@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Countdown from '../../components/Countdown/Countdown';
 import './Homepage.css';
 
 class Homepage extends Component {
