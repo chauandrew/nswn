@@ -16,20 +16,25 @@
     width:35vw;
 }
 
+.get-started-sub h3{
+    margin-left: 10%;
+    margin-bottom: 2vh;
+}
+
 #get-started-form {
     margin-right: 5vw;
 }
 
 #get-started-form-mobile {
-    width: 80vw;
+    width: 60vw;
 }
 
 #get-started-flyers {
     margin-left: 5vw;
-    background-color: aliceblue;
+    display: block;
+    align-items: center;
 }
 
 #get-started-flyers-mobile {
     width: 80vw;
-    background-color: aliceblue;
 }

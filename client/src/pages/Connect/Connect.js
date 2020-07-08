@@ -87,9 +87,11 @@ const Connect = () => {
     };
 
     /* Renders the list of flyers from json file */
+    let assets = require.context('../../assets', true);
     const flyerList = flyers.events.map((event) => {
+        let eventSrc = assets('./' + event.src);
         return(
-            <Flyer src={event.src} alt={event.eventName} time={event.eventTime} location={event.location} />
+            <Flyer src={eventSrc} alt={event.eventName} eventName={event.eventName} eventTime={event.eventTime} location={event.location} />
         )
     })
 
@@ -130,6 +132,7 @@ const Connect = () => {
                     </Form>
                 </div>
                 <div className="get-started-sub" id={contentIDs[2]}>
+                    <h3>Our Events</h3>
                     {flyerList}
                 </div>
             </div>
