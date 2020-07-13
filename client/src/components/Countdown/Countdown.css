@@ -1,4 +1,5 @@
 #countdown-box {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     /* width: 626px; */

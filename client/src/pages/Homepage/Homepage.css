@@ -4,6 +4,7 @@ html, body {
 
 .container-fluid {
     padding: 80px 120px;
+    font-family: "Roboto", Times, serif;
 }
 
 #content {
@@ -61,6 +62,10 @@ html, body {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+p {
+    padding: 50px;
 }
 
 #message {
