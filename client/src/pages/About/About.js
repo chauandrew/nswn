@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
             <div>
-                <div className="container-fluid">
+                <div id="nswnbanner">
                     <div className="text">What is NSWN?</div>
                 </div>
                 <div class="embed-responsive embed-responsive-16by9">

@@ -1,9 +1,8 @@
 html, body {
     height: 100%;
-    font-family: Cabin;
 }
 
-.container-fluid {
+#nswnbanner {
     height: 600px;
     background-image: url(../../assets/uclaheader.png);
     /* This is what makes the background image rescale based on the container's size */
@@ -27,7 +26,6 @@ html, body {
 }
 
 .text {
-    font-family: Cabin;
     font-style: normal;
     font-weight: normal;
     text-shadow: -1px 1px 0 white,
